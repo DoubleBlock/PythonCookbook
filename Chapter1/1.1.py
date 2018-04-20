@@ -7,3 +7,12 @@ x, y= p  # x=4 y=5
 data = [ 'ACME', 50, 91.1, (2012, 12, 21) ]
 name, shares, price, date= data # name='ACME' date=(2012,12,21)
 # 变量的个数与元素的个数相等以上才生效，不等会报错
+# 这种解压赋值可以用于任何可迭代对象上，还包括字符串，文件对象，迭代器，生成器
+s= 'hello'
+a, b, c, d, e= s
+
+# 可以用任意变量名占位纸解压部分元素，不需要的舍弃掉部分元素就行了
+
+s1='hello world'
+_, _, _, _, _, _,f, g, h, i, j= s1
+print(f, g, h, i, j) # w o r l d
