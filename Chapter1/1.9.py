@@ -23,3 +23,5 @@ print(a.items()& b.items()) # {('y', 2)}
 # 实现一个新字典
 c= {key:a[key] for key in a.keys()- {'z'}}
 print(c) # {'x': 1, 'y': 2}
+
+
